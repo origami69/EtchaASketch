@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <link rel='stylesheet' href='rezero.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Will use the api for later use to make it so I will have to hold mouse to color since accuracy is great -->
+    <title>EtchASketch</title>
+</head>
+
+<body>
+    <div class='Contain'>
+        <div class='title'>
+            <h1>SketchPad</h1>
+        </div>
+        <div class='juice'>
+            <div class='board'></div>
+            <div class='buttons'>
+                <button onclick="changeColor('black')">Black</button>
+                <button onclick="changeColor('grey')">Grey</button>
+                <button onclick="changeColor('white')">Erase</button>
+                <button onclick="changeColor('random')">Random</button>
+                <button onclick="reZero()">Reset</button>
+            </div>
+            <div class='lowb'>
+                <input type=" text " placeholder="sizeb " value="16 " onchange='thighSize(this.value)'>
+                <button>Size</button>
+            </div>
+        </div>
+    </div>
+    <script src='script.js '></script>
+
+</body>
+
+</html>
